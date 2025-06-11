@@ -1,7 +1,7 @@
 import sys
 
 def error_handler(error,error_detail:sys):
-    _, exc_tb = error_detail.exc_info()
+    _, _, exc_tb = sys.exc_info()
     error_message = f"Error occurred in script: {exc_tb.tb_frame.f_code.co_filename} at line {exc_tb.tb_lineno}: {str(error)}"
     return error_message
 

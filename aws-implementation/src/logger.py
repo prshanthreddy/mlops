@@ -1,9 +1,8 @@
 import logging
 import os
-import datetime
+# import 
 
-LOG_FILE =f"{datetime.now().strftime('%Y-%m-%d')}.log"
-logs_path = os.path.join(os.getcwd(), "logs", LOG_FILE)
+logs_path=os.path.join('logs', 'app.log')
 os.makedirs(os.path.dirname(logs_path), exist_ok=True)
 logging.basicConfig(
     filename=logs_path,
