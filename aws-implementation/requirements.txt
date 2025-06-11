@@ -6,6 +6,7 @@ seaborn
 catboost
 xgboost
 dill
-
+flask
+streamlit
 
 -e .
